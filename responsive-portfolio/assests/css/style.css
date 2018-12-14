@@ -86,7 +86,7 @@ a:active {
 
 
 .big-box {
-    margin-left: 200px;
+    margin: auto;
     padding: 25px;
     width: 960px;
     background-color: white;
@@ -194,16 +194,35 @@ img {
 /* Media Query */
 
 @media screen and (max-width: 980px) {
-
-}
-
-@media screen and (max-width: 768px) {
     
 }
 
-@media screen and (min-width: 640px) {
-    .topnav {
-        float: none;
-        width: 100%;
+@media screen and (max-width: 768px) {
+    .big-box {
+        width: 768;
+        clear: left;
+        overflow: auto;
     }
+
+    #form-1 {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .big-box {
+        width: 640px;
+        clear: left;
+        overflow: auto;
+    }
+
+    .container {
+        width: 640px;
+    }
+
+    #form-1 {
+        width: 640px;
+    }
+
+
 }
